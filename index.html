@@ -302,6 +302,52 @@
                 font-size: 48px;
             }
         }
+        .hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-photo {
+  flex: 0 0 300px;
+}
+
+.hero-photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-photo {
+    flex: auto;
+  }
+
+  .hero-photo img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
     </style>
 </head>
 
@@ -324,42 +370,40 @@
     <!-- Hero Section -->
 
     <header class="hero">
+  <div class="hero-container">
 
-        <div class="hero-content">
+    <div class="hero-content">
+      <div class="hero-tag">SUPPLY CHAIN • OPERATIONS • BUSINESS DEVELOPMENT</div>
 
-            <div class="hero-tag">
-                SUPPLY CHAIN • OPERATIONS • BUSINESS DEVELOPMENT
-            </div>
+      <h1>Harish Ram <span>Gubendran</span></h1>
 
-            <h1>
-                Harish Ram <span>Gubendran</span>
-            </h1>
+      <h2>MSc International Business Management | Supply Chain & Operations</h2>
 
-            <h2>
-                MSc International Business Management | Supply Chain & Operations
-            </h2>
+      <p>
+        International Business Management graduate with a focus on supply chain
+        and operations, interested in logistics optimisation, operational
+        efficiency and data-driven decision making.
+      </p>
 
-            <p>
-                International Business Management graduate with a focus on
-                supply chain and operations, interested in logistics optimisation,
-                operational efficiency and data-driven decision making.
-            </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View My Projects</a>
 
-            <div class="buttons">
+        <a href="Harish-Ram-Gubendran-CV.pdf"
+           class="btn secondary"
+           download>
+          Download CV
+        </a>
 
-                <a href="#projects" class="btn primary">
-                    View My Projects
-                </a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
 
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
+    <div class="hero-photo">
+      <img src="profile.jpg" alt="Harish Ram Gubendran">
+    </div>
 
-            </div>
-
-        </div>
-
-    </header>
+  </div>
+</header> 
 
 
     <!-- About -->
